@@ -1,11 +1,11 @@
-package cuentas1;
+package cuenta2;
 /**
  * Esta clase se usa para tener los datos de 
  * las cuentas bancarias de los clientes de bankia
  * @author Juan Antonio
  * @version Beta
  */
-public class CCuenta1{
+public class CCuenta2{
 
 //Estos son las llamadas que va a hacer a los parametros de la clase cuenta
     private String nombre;
@@ -13,7 +13,7 @@ public class CCuenta1{
     private double saldo;
     private double tipoInterés;
 
-    public CCuenta1()
+    public CCuenta2()
     {
     }
     /**nos informa del tipo de llamada que va a hacer, y que significa la abreviatura, 
@@ -24,7 +24,7 @@ public class CCuenta1{
      * @param sal se refiere al parametro saldo
      * @param tipo se refiere al parametro tipoInteres
      */
-    public CCuenta1(String nom, String cue, double sal, double tipo)
+    public CCuenta2(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
         setCuenta(cue);

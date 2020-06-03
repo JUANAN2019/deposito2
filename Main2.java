@@ -1,9 +1,9 @@
-package cuentas1;
+package cuenta2;
 
-import cuentas1.CCuenta1;
-import cuentas1.Main.Operativa_cuentaParameter;
+import cuenta2.CCuenta2;
+import cuenta2.Main2.Operativa_cuentaParameter;
 
-public class Main1 {
+public class Main2 {
 
     public static class MainParameter {
 		public String[] args;
@@ -14,22 +14,22 @@ public class Main1 {
 	}
 
 	public static void main(String[] args)  {
-        CCuenta1 cuenta1;
+        CCuenta2 cuenta2;
 		double saldoActual;
 		operativa_cuenta(new Operativa_cuentaParameter());
 
-        cuenta1 = new CCuenta1("Antonio López","1000-2365-85-1230456789",2500,0);
-        saldoActual = cuenta1.estado();
+        cuenta2 = new CCuenta2("Antonio López","1000-2365-85-1230456789",2500,0);
+        saldoActual = cuenta2.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
         try {
-            cuenta1.retirar(2300);
+            cuenta2.retirar(2300);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
+            cuenta2.ingresar(695);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
@@ -41,7 +41,8 @@ public class Main1 {
 	}
 
 	public static float operativa_cuenta(Operativa_cuentaParameter cantidad) {
-		CCuenta1 cuenta1;
+		CCuenta2 cuenta2;
         double saldoActual;
 	}
+
 }
